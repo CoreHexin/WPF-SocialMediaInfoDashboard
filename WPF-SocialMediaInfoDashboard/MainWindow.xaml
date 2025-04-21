@@ -124,5 +124,126 @@
             </StackPanel>
         </Border>
 
+        <!--  Main Panel  -->
+        <StackPanel
+            Grid.Row="1"
+            Grid.Column="1"
+            Margin="0,0,50,20">
+
+            <!--  Info Card  -->
+            <Grid Height="110" Margin="-8,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Border Style="{StaticResource infoCard}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Style="{StaticResource infoCardStackPanel}">
+                            <TextBlock Style="{StaticResource infoCardTitle}" Text="42,500,000" />
+                            <TextBlock Style="{StaticResource infoCardText}" Text="Total Viewers" />
+                        </StackPanel>
+
+                        <fa:ImageAwesome Icon="Eye" Style="{StaticResource infoCardIcon}" />
+                    </Grid>
+                </Border>
+
+                <Border Grid.Column="1" Style="{StaticResource infoCard}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Style="{StaticResource infoCardStackPanel}">
+                            <TextBlock Style="{StaticResource infoCardTitle}" Text="42,500,000" />
+                            <TextBlock Style="{StaticResource infoCardText}" Text="Total Viewers" />
+                        </StackPanel>
+
+                        <fa:ImageAwesome Icon="Eye" Style="{StaticResource infoCardIcon}" />
+                    </Grid>
+                </Border>
+
+                <Border Grid.Column="2" Style="{StaticResource infoCard}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Style="{StaticResource infoCardStackPanel}">
+                            <TextBlock Style="{StaticResource infoCardTitle}" Text="42,500,000" />
+                            <TextBlock Style="{StaticResource infoCardText}" Text="Total Viewers" />
+                        </StackPanel>
+
+                        <fa:ImageAwesome Icon="Eye" Style="{StaticResource infoCardIcon}" />
+                    </Grid>
+                </Border>
+            </Grid>
+
+            <!--  Profile  -->
+            <Border
+                Margin="0,20,0,0"
+                Padding="15"
+                Background="#FDFDFD"
+                CornerRadius="15">
+                <Grid>
+                    <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+                        <Border
+                            Width="60"
+                            Height="60"
+                            Margin="15,0"
+                            CornerRadius="30">
+                            <Border.Background>
+                                <ImageBrush ImageSource="/Images/user.jpg" />
+                            </Border.Background>
+                        </Border>
+
+                        <StackPanel VerticalAlignment="Center">
+                            <TextBlock
+                                FontSize="16"
+                                Foreground="#8f8f8f"
+                                Text="John Doe" />
+                            <TextBlock
+                                FontSize="13"
+                                Foreground="#9c9c9c"
+                                Text="Berlin, Germany" />
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel
+                        Margin="0,0,20,0"
+                        HorizontalAlignment="Right"
+                        Orientation="Horizontal">
+                        <Button Style="{StaticResource button}">
+                            <StackPanel Orientation="Horizontal">
+                                <fa:ImageAwesome Icon="BookmarkOutline" Style="{StaticResource buttonIcon}" />
+                                <TextBlock Style="{StaticResource buttonText}" Text="Save Profile" />
+                            </StackPanel>
+                        </Button>
+
+                        <Button
+                            Background="#202934"
+                            Foreground="#e9e9e9"
+                            Style="{StaticResource button}">
+                            <StackPanel Orientation="Horizontal">
+                                <fa:ImageAwesome Icon="BookmarkOutline" Style="{StaticResource buttonIcon}" />
+                                <TextBlock Style="{StaticResource buttonText}" Text="Save Profile" />
+                            </StackPanel>
+                        </Button>
+
+                        <fa:ImageAwesome Icon="EllipsisV" Style="{StaticResource iconBar}" />
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+        </StackPanel>
+
     </Grid>
 </Window>
