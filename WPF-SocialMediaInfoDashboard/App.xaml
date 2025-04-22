@@ -152,6 +152,83 @@
                 </Trigger>
             </Style.Triggers>
         </Style>
-        
+
+        <Style x:Key="socialCard" TargetType="Border">
+            <Setter Property="Background" Value="#FDFDFD" />
+            <Setter Property="CornerRadius" Value="15" />
+            <Setter Property="Margin" Value="8,20,8,0" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="BorderBrush" Value="#DBDBDB" />
+        </Style>
+
+        <Style
+            x:Key="socialCardIconBar"
+            BasedOn="{StaticResource iconBar}"
+            TargetType="fa:ImageAwesome">
+            <Setter Property="Margin" Value="0,15,20,15" />
+            <Setter Property="HorizontalAlignment" Value="Right" />
+        </Style>
+
+        <Style x:Key="socialCardStackPanel" TargetType="StackPanel">
+            <Setter Property="Orientation" Value="Horizontal" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+        </Style>
+
+        <Style x:Key="socialCardIcon" TargetType="fa:ImageAwesome">
+            <Setter Property="Width" Value="30" />
+            <Setter Property="Height" Value="30" />
+        </Style>
+
+        <Style x:Key="socialCardIconTitle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="Margin" Value="10,0,0,0" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+
+        <Style x:Key="socialCardCounterTitle" TargetType="TextBlock">
+            <Setter Property="TextAlignment" Value="Center" />
+            <Setter Property="FontSize" Value="48" />
+            <Setter Property="Margin" Value="0,50,0,5" />
+        </Style>
+
+        <Style x:Key="socialCardCounterText" TargetType="TextBlock">
+            <Setter Property="TextAlignment" Value="Center" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="Foreground" Value="#808080" />
+        </Style>
+
+        <Style TargetType="Separator">
+            <Setter Property="Background" Value="#c4c4c4" />
+            <Setter Property="Margin" Value="0,60,0,15" />
+        </Style>
+
+        <Style x:Key="socialCardBottomTitle" TargetType="TextBlock">
+            <Setter Property="TextAlignment" Value="Center" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="Foreground" Value="#808080" />
+        </Style>
+
+        <Style x:Key="socialCardBottomText" TargetType="TextBlock">
+            <Setter Property="TextAlignment" Value="Center" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="Margin" Value="0,5,0,0" />
+            <Setter Property="Foreground" Value="#474747" />
+        </Style>
+
+        <Style x:Key="applicationIcon" TargetType="Image">
+            <Setter Property="Width" Value="20" />
+            <Setter Property="Height" Value="20" />
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="RenderTransform">
+                        <Setter.Value>
+                            <ScaleTransform ScaleX="1.1" ScaleY="1.1" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
     </Application.Resources>
 </Application>
